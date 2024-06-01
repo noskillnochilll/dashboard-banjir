@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-    font-family: "Poppins", sans-serif;
-}
-
 body {
     min-height: 100vh;
     display: flex;
@@ -88,7 +81,18 @@ body {
 .sidebar-links li a:hover {
     background-color: #ffffff2d;
     color: #fff;
+    padding: 0px 30px;
+}
+
+.flex-container {
+    display: flexbox;
+    flex-direction: column;
+}
+
+select {
+    padding:10px 20px;
     border-radius: 10px;
+    font-size: medium;
 }
 
 .container{
@@ -343,4 +347,7 @@ body {
 .active-clone#clone-info-wind span{
     transform: translateY(0%);
     transition: transform 1s ease;
+}
+select:focus{
+    outline: none;
 }
